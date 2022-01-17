@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@use "_variable" as v;
+
+//
+// border
+//////////////////////////////////////////////////////////////////////
+@mixin border($t:0, $r:0, $b:0, $l:0, $s:s, $c:v.$color_primary) {
+  // border-width
+	border-width: $t+px $r+px $b+px $l+px;
+  // border-style
+  @if $s == s {
+    border-style: solid;
+  }
+  @else if $s == do {
+    border-style: dotted;
+  }
+  @else if $s == da {
+    border-style: dashed;
+  }
+  // border-color
+	border-color: $c;
+}
+//
+// flex
+//////////////////////////////////////////////////////////////////////
+@mixin flex($fw:default, $jc:default, $ai:default) {
+	display: flex;
+  // flex-wrap
+  @if $fw == w {
+    flex-wrap: wrap;
+  }
+  @else if $fw == wr {
+    flex-wrap: wrap-reverse;
+  }
+  // justify-content
+  @if $jc == fe {
+    justify-content: flex-end;
+  }
+  @else if $jc == c {
+    justify-content: center;
+  }
+  @else if $jc == sb {
+    justify-content: space-between;
+  }
+  @else if $jc == sa {
+    justify-content: space-around;
+  }
+  // align-items
+  @if $ai == c {
+    align-items: center;
+  }
+  @else if $ai == fs {
+    align-items: flex-start;
+  }
+	@else if $ai == fe {
+    align-items: flex-end;
+  }
+}
+//
+// hover animation
+//////////////////////////////////////////////////////////////////////
+@mixin hoverOpacity($d:0.3, $o:0.7) {
+	transition-duration: $d+s; 
+	@include mediaMinPc {
+		&:hover {
+			opacity: $o;
+		}
+	}
+}
+//
+// media query
+//////////////////////////////////////////////////////////////////////
+// max width
+@mixin mediaMax($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+@mixin mediaMaxTablet {
+  @media (max-width: v.$deviceMaxWidthTablet) {
+    @content;
+  }
+}
+@mixin mediaMaxSp {
+  @media (max-width: v.$deviceMaxWidthSp) {
+    @content;
+  }
+}
+// min width
+@mixin mediaMin($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+@mixin mediaMinPc {
+  @media (min-width: v.$deviceMinWidthPc) {
+    @content;
+  }
+}
+@mixin mediaMinTablet {
+  @media (min-width: v.$deviceMinWidthTablet) {
+    @content;
+  }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@use "../vendor/_font";
+
+//
+// color
+//////////////////////////////////////////////////////////////////////
+$color_primary: #000000;
+$color_secondary: #000000;
+$color_tertiary: #000000;
+
+//
+// font color
+//////////////////////////////////////////////////////////////////////
+$fontColor_primary: #000000;
+$fontColor_secondary: #000000;
+$fontColor_tertiary: #000000;
+
+//
+// font family
+//////////////////////////////////////////////////////////////////////
+$fontFamilyJapanese_primary: "", sans-serif;
+$fontFamilyJapanese_secondary: "", sans-serif;
+$fontFamilyEnglish_primary: "", sans-serif;
+$fontFamilyEnglish_secondary: "", sans-serif;
+
+//
+// device (media query)
+//////////////////////////////////////////////////////////////////////
+// pc
+$deviceMinWidthPc: 1025px;
+// Tablet
+$deviceMaxWidthTablet: 1024px;
+$deviceMinWidthTablet: 768px;
+// SP
+$deviceMaxWidthSp: 767px;

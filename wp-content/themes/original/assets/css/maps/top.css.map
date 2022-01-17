@@ -1,0 +1,1 @@
+{"version":3,"sources":["top.scss","top.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;ACDF","file":"../top.css","sourcesContent":["@charset \"UTF-8\";\n\nbody {\n  text-align: center;\n}","body {\n  text-align: center;\n}"]}

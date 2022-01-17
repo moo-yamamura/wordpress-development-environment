@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#dashboard-widgets .postbox-container {
+  width: 100% !important;
+}
+#dashboard-widgets .postbox-container .empty-container {
+  display: none;
+}
+#dashboard-widgets .meta-box-sortables {
+  margin-bottom: 0px !important;
+}
+.postbox-header {
+  background-color: #1d2327;
+}
+.postbox-header .hndle {
+  color: #f0f0f1;
+}
