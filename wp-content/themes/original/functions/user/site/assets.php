@@ -5,7 +5,7 @@ function add_site_assets() {
 
   // main
   wp_enqueue_style('main',$directory.'/assets/css/main.css',null,null);
-  wp_enqueue_script('main',$directory.'/assets/js/main.bundle.js',null,null,true);
+  wp_enqueue_script('main',$directory.'/assets/js/main.js',null,null,true);
 
   // top
   if(is_front_page()) {
