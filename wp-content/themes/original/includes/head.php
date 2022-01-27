@@ -1,5 +1,3 @@
-<!-- google tag manager -->
-<?php include(TEMPLATEPATH.'/includes/analytics/google-tag-manager.php'); ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
@@ -36,17 +34,21 @@ $url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST']
 <meta property="og:description" content="<?php echo $meta_description; ?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/ogp.png">
 <meta property="og:site_name" content="<?php echo $blog_info_name; ?>">
+<!-- /Facebook OGP -->
 <!-- Twitter card -->
 <meta name="twitter:url" content="<?php echo $url; ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="<?php echo $meta_title ?>">
 <meta name="twitter:description" content="<?php echo $meta_description; ?>">
 <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/ogp.png">
+<!-- /Twitter card -->
 <!-- icon -->
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
+<!-- /icon -->
 <!-- url normalization -->
 <link rel="canonical" href="<?php echo $url; ?>">
+<!-- /url normalization -->
 <!-- structured data -->
 <script type="application/ld+json">
 {
@@ -66,4 +68,5 @@ $url = (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST']
   "url":"<?php echo $url; ?>"
 }
 </script>
+<!-- /structured data -->
 <?php wp_head(); ?>

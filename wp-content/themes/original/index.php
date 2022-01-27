@@ -11,6 +11,8 @@ include(TEMPLATEPATH.'/includes/head.php');
 
 <body>
 <?php
+// google tag manager (noscript)
+include(TEMPLATEPATH.'/includes/analytics/google-tag-manager-noscript.php');
 // site header
 include(TEMPLATEPATH.'/includes/site-header.php');
 ?>
