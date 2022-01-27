@@ -6,14 +6,16 @@
 
 <body>
 <?php
-include(TEMPLATEPATH.'/includes/header.php');
-
+// google tag manager (noscript)
+include(TEMPLATEPATH.'/includes/analytics/google-tag-manager-noscript.php');
+// site header
+include(TEMPLATEPATH.'/includes/site-header.php');
 // blog
 if(is_singular('blog')) {
   include(TEMPLATEPATH.'/templates/singles/blog.php');
 }
-
-include(TEMPLATEPATH.'/includes/footer.php');
+// site footer
+include(TEMPLATEPATH.'/includes/site-footer.php');
 ?>
 </body>
 </html>

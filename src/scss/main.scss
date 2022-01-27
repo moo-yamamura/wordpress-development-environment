@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
+@use "_partial/vendor/*";
 @use "_partial/base/_reset";
 @use "_partial/base/_html";
 @use "_partial/component/*";
 @use "_partial/layout/*";
-@use "_partial/vendor/*";
+@use "_partial/page/*";

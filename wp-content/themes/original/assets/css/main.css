@@ -496,4 +496,16 @@ a {
   text-align: center;
   background-color: #333333;
 }
+
+.mainContents--blogList {
+  text-align: center;
+}
+
+.mainContents--top {
+  text-align: center;
+}
+
+.mainContents--underlayer {
+  text-align: center;
+}
 /*# sourceMappingURL=maps/main.css.map */
