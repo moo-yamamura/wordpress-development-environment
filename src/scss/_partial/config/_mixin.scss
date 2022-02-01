@@ -56,6 +56,19 @@
 	@else if $ai == fe {
     align-items: flex-end;
   }
+  // flex-direction
+  @if $fd == r {
+    flex-direction: row;
+  }
+  @else if $fd == rr {
+    flex-direction: row-reverse;
+  }
+  @else if $fd == c {
+    flex-direction: row; 
+  }
+  @else if $fd == cr {
+    flex: column-reverse;
+  }
 }
 //
 // hover animation
