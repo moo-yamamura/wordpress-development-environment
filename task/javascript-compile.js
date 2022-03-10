@@ -24,9 +24,6 @@ const javascriptCompile = done => {
     .pipe(babel({
       'presets': ['@babel/preset-env']
     }))
-    .pipe(mode.production(
-      uglify())
-    )
     .pipe(gulp.dest(path.js.dest));
 
   done();
