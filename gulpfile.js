@@ -15,11 +15,11 @@ import fileWatch from './task/file-watch.js'; // ファイル監視
 export const build = gulp.series(
   gulp.parallel(
     sassCompile,
-    javascriptLint,
-    javascriptCompile,
-    javascriptBundle,
     staticDest
-  )
+  ),
+  javascriptLint,
+  javascriptCompile,
+  javascriptBundle
 );
 // single task
 export {
