@@ -24,7 +24,7 @@
 //
 // flex
 //////////////////////////////////////////////////////////////////////
-@mixin flex($fw:default, $jc:default, $ai:default) {
+@mixin flex($fw:default, $jc:default, $ai:default, $fd:default) {
 	display: flex;
   // flex-wrap
   @if $fw == w {
